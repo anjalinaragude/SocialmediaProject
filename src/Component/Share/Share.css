@@ -35,7 +35,7 @@ box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
     align-items: center;
     justify-content: space-between;
 }
-.shareOPtions{
+.shareOptions{
     display: flex;
     margin-left: 20px;
 }
@@ -44,5 +44,10 @@ box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
    align-items: center;
    margin-right: 15px;
    cursor: pointer;
+
+}
+.shareIcon{
+    font-size: 18px;
+    margin-right: 3px;
 
 }

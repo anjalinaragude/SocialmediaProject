@@ -10,22 +10,22 @@ const Share = () => {
         </div>
         <hr className="shareHr" />
         <div className="shareBottom">
-            <div className="shareOptiond">
+            <div className="shareOptions">
          <div className="shareOption">
             <MdPermMedia className="shareIcon"/>
-            <span className="shareOptionText">photo or Video</span>
+            <span className="shareOptionText">photo/Video</span>
          </div>
          <div className="shareOption">
             <MdPermMedia className="shareIcon"/>
-            <span className="shareOptionText">photo or Video</span>
+            <span className="shareOptionText">Tag</span>
          </div>
          <div className="shareOption">
             <MdPermMedia className="shareIcon"/>
-            <span className="shareOptionText">photo or Video</span>
+            <span className="shareOptionText">Location</span>
          </div>
          <div className="shareOption">
             <MdPermMedia className="shareIcon"/>
-            <span className="shareOptionText">photo or Video</span>
+            <span className="shareOptionText">Feelings</span>
          </div>
          </div>
         </div>
