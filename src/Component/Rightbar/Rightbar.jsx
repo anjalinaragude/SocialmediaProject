@@ -1,5 +1,6 @@
 import "../Rightbar/Rightbar.css"
-
+import { Users } from "../../Data";
+import Online from "../Online/Online";
 const Rightbar=()=>{
     return(
         <div className="rightbar">
@@ -10,57 +11,15 @@ const Rightbar=()=>{
                 </div>
                 <img src="asset/food.png" alt="" className="rightbarAd" />
             <h4 className="rightbarTitle">online Friends</h4>
-            <ul className="rightbarFriendList">
-                <li className="rightbarFriend">
-                    <div className="rightbarProfileImgContainer">
-                        <img src="asset/profile4.jpg" alt="" className="rightbarProfileImg" />
-                     <span className="rightbaronline"></span>
-                    </div>
-                    <span className="rightbarUserName">piraji Patil</span>
-                </li>
-                <li className="rightbarFriend">
-                    <div className="rightbarProfileImgContainer">
-                        <img src="asset/profile4.jpg" alt="" className="rightbarProfileImg" />
-                     <span className="rightbaronline"></span>
-                    </div>
-                    <span className="rightbarUserName">piraji Patil</span>
-                </li>
-                <li className="rightbarFriend">
-                    <div className="rightbarProfileImgContainer">
-                        <img src="asset/profile4.jpg" alt="" className="rightbarProfileImg" />
-                     <span className="rightbaronline"></span>
-                    </div>
-                    <span className="rightbarUserName">piraji Patil</span>
-                </li>
-                <li className="rightbarFriend">
-                    <div className="rightbarProfileImgContainer">
-                        <img src="asset/profile4.jpg" alt="" className="rightbarProfileImg" />
-                     <span className="rightbaronline"></span>
-                    </div>
-                    <span className="rightbarUserName">piraji Patil</span>
-                </li>
-                <li className="rightbarFriend">
-                    <div className="rightbarProfileImgContainer">
-                        <img src="asset/profile4.jpg" alt="" className="rightbarProfileImg" />
-                     <span className="rightbaronline"></span>
-                    </div>
-                    <span className="rightbarUserName">piraji Patil</span>
-                </li>
-                <li className="rightbarFriend">
-                    <div className="rightbarProfileImgContainer">
-                        <img src="asset/profile4.jpg" alt="" className="rightbarProfileImg" />
-                     <span className="rightbaronline"></span>
-                    </div>
-                    <span className="rightbarUserName">piraji Patil</span>
-                </li>
-                <li className="rightbarFriend">
-                    <div className="rightbarProfileImgContainer">
-                        <img src="asset/profile4.jpg" alt="" className="rightbarProfileImg" />
-                     <span className="rightbaronline"></span>
-                    </div>
-                    <span className="rightbarUserName">piraji Patil</span>
-                </li>
-            </ul>
+            {/* <ul className="rightbarFriendList">
+               
+               
+               {Users.mao((u)=>(
+                <Online  key={u.id} user={u}/>
+               ))}
+               
+               
+            </ul> */}
             </div>
         </div>
     )

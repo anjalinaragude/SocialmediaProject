@@ -1,7 +1,9 @@
 import '../Post/Post.css';
 import {FiMoreVertical} from 'react-icons/fi';
-
+import {Users} from '../../Data'
 const Post = ({post}) => {
+ 
+
   return (
     <div className='post'>
          <div className="postWrapper">
@@ -9,8 +11,8 @@ const Post = ({post}) => {
             <div className="postTop">
                 <div className="postTopLeft">
                    
-                    <img src="/asset/profile3.jpg" alt="" className="postProfileImg" />
-                    <span className="postUserName">Sid Sharma</span>
+                    <img src={Users.filter((u)=> u.id===post.userId)[0].profilePicture} alt="" className="postProfileImg" />
+                    <span className="postUserName">{Users.filter((u)=> u.id===post.userId)[0].username}</span>
                     <span className="postDate">{post.date}</span>
                 </div>
                 <div className="postTopRight">
