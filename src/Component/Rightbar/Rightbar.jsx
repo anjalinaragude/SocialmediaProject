@@ -11,15 +11,15 @@ const Rightbar=()=>{
                 </div>
                 <img src="asset/food.png" alt="" className="rightbarAd" />
             <h4 className="rightbarTitle">online Friends</h4>
-            {/* <ul className="rightbarFriendList">
+            <ul className="rightbarFriendList">
                
                
-               {Users.mao((u)=>(
+               {Users.map((u)=>(
                 <Online  key={u.id} user={u}/>
                ))}
                
                
-            </ul> */}
+            </ul>
             </div>
         </div>
     )
