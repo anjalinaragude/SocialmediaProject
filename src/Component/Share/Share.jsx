@@ -1,5 +1,7 @@
 import "../Share/Share.css";
-import {MdPermMedia} from 'react-icons/md'
+import {MdPermMedia,MdEmojiEmotions} from 'react-icons/md';
+import {FaLocationDot} from 'react-icons/fa6';
+import {PiTagSimpleFill} from 'react-icons/pi';
 const Share = () => {
   return (
     <div className="share">
@@ -12,22 +14,23 @@ const Share = () => {
         <div className="shareBottom">
             <div className="shareOptions">
          <div className="shareOption">
-            <MdPermMedia className="shareIcon"/>
+            <MdPermMedia htmlColor="tomato" className="shareIcon"/>
             <span className="shareOptionText">photo/Video</span>
          </div>
          <div className="shareOption">
-            <MdPermMedia className="shareIcon"/>
+            <PiTagSimpleFill className="shareIcon"/>
             <span className="shareOptionText">Tag</span>
          </div>
          <div className="shareOption">
-            <MdPermMedia className="shareIcon"/>
+            <FaLocationDot className="shareIcon"/>
             <span className="shareOptionText">Location</span>
          </div>
          <div className="shareOption">
-            <MdPermMedia className="shareIcon"/>
+            <MdEmojiEmotions className="shareIcon"/>
             <span className="shareOptionText">Feelings</span>
          </div>
          </div>
+         <button className="shareButton">Share</button>
         </div>
       </div>
     </div>
